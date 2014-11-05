@@ -123,5 +123,10 @@ int bench_sched_pipe(int argc, const char **argv,
 		break;
 	}
 
+#else
+	fprintf(stderr, "Not supported on Android platform\n");
+#endif
+        /* ANDROID_CHANGE_END */
+
 	return 0;
 }
